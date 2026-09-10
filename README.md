@@ -127,3 +127,8 @@ php artisan serve
   <b>Sistem Informasi Masjid (SIMasjid)</b><br>
   Dibangun dengan ❤️ untuk mendorong literasi teknologi dan kemaslahatan umat. Semoga bermanfaat!
 </p>
+
+---
+
+> **⚠️ Disklaimer:**
+> Proyek ini dikembangkan secara berkelanjutan. Meskipun standar praktik keamanan dan arsitektur telah diupayakan dengan maksimal, tidak menutup kemungkinan masih terdapat *bugs*, celah keamanan, atau ketidaksempurnaan pada fitur-fitur di dalam aplikasi ini. Harap lakukan pengujian (*testing*) lebih lanjut secara mandiri sebelum mendeploy sistem ini ke lingkungan produksi publik skala besar. Kontribusi, saran, dan perbaikan dari komunitas sangat kami hargai.
