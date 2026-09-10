@@ -6,11 +6,11 @@ return [
     | Informasi Umum & Kontak
     |--------------------------------------------------------------------------
     */
-    'name' => 'Masjid Nurul Iman',
-    'arabic_name' => 'المؤذن',
+    'name' => 'Masjid Atas Muer',
+    'arabic_name' => 'المسجد الأتاس',
     'contact' => [
-        'phone' => '+62 000-0000-0000',
-        'email' => 'admin@masjidnuruliman.com',
+        'phone' => '+62 812-3456-7890',
+        'email' => 'admin@masjidatasmuer.com',
         'address' => 'Desa Muer, Kec. Plampang, Kabupaten Sumbawa, NTB.',
         'location_short' => 'Muer, Kec. Plampang, Sumbawa',
         'google_maps_link' => 'https://maps.google.com/?cid=1926899457740035325',
@@ -24,7 +24,7 @@ return [
     */
     'social' => [
         'facebook' => 'https://www.facebook.com/',
-        'instagram' => 'https://www.instagram.com/remasnurulimann_/',
+        'instagram' => 'https://www.instagram.com/',
         'youtube' => 'https://www.youtube.com/',
         'twitter' => 'https://twitter.com/',
     ],
@@ -37,20 +37,20 @@ return [
     'donasi' => [
         'bank' => [
             [
-                'name' => 'Bank Syariah Indonesia (BSI)',
-                'number' => '700 800 9000',
-                'owner' => 'a.n. DKM Masjid Nurul Iman',
+                'name' => 'Bank NTB Syariah',
+                'number' => '501 020 3040',
+                'owner' => 'a.n. DKM Masjid Atas Muer',
                 'color' => 'islamic-green'
             ],
             [
-                'name' => 'Bank Mandiri',
-                'number' => '161 00 1234567 8',
-                'owner' => 'a.n. DKM Masjid Nurul Iman',
+                'name' => 'Bank Syariah Indonesia (BSI)',
+                'number' => '711 888 9999',
+                'owner' => 'a.n. DKM Masjid Atas Muer',
                 'color' => 'islamic-gold'
             ],
         ],
         'qris_image_url' => '', // Kosongkan jika belum ada gambar QRIS
-        'konfirmasi_whatsapp' => '+62 000-0000-0000',
+        'konfirmasi_whatsapp' => '+62 812-3456-7890',
     ],
 
     /*
@@ -145,5 +145,18 @@ return [
                 'M. Saleh Monde'
             ]
         ],
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Jadwal Sholat Default (Statis jika tidak pakai API)
+    |--------------------------------------------------------------------------
+    */
+    'jadwal_sholat' => [
+        'subuh'   => '04:53',
+        'dzuhur'  => '12:23',
+        'ashar'   => '15:28',
+        'maghrib' => '18:32',
+        'isya'    => '19:43',
     ]
 ];

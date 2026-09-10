@@ -31,11 +31,11 @@
                 <p class="text-sm font-medium">Sumbawa & Sekitarnya</p>
             </div>
             <div class="p-6 md:w-3/4 grid grid-cols-2 md:grid-cols-5 gap-4 text-center items-center">
-                <div><p class="text-islamic-gold text-sm uppercase font-bold mb-1">Subuh</p><div class="font-serif text-2xl font-bold">04:53</div></div>
-                <div><p class="text-islamic-gold text-sm uppercase font-bold mb-1">Dzuhur</p><div class="font-serif text-2xl font-bold">12:23</div></div>
-                <div><p class="text-islamic-gold text-sm uppercase font-bold mb-1">Ashar</p><div class="font-serif text-2xl font-bold">15:28</div></div>
-                <div><p class="text-islamic-gold text-sm uppercase font-bold mb-1">Maghrib</p><div class="font-serif text-2xl font-bold">18:32</div></div>
-                <div><p class="text-islamic-gold text-sm uppercase font-bold mb-1">Isya</p><div class="font-serif text-2xl font-bold">19:43</div></div>
+                <div><p class="text-islamic-gold text-sm uppercase font-bold mb-1">Subuh</p><div class="font-serif text-2xl font-bold">{{ config('masjid.jadwal_sholat.subuh') }}</div></div>
+                <div><p class="text-islamic-gold text-sm uppercase font-bold mb-1">Dzuhur</p><div class="font-serif text-2xl font-bold">{{ config('masjid.jadwal_sholat.dzuhur') }}</div></div>
+                <div><p class="text-islamic-gold text-sm uppercase font-bold mb-1">Ashar</p><div class="font-serif text-2xl font-bold">{{ config('masjid.jadwal_sholat.ashar') }}</div></div>
+                <div><p class="text-islamic-gold text-sm uppercase font-bold mb-1">Maghrib</p><div class="font-serif text-2xl font-bold">{{ config('masjid.jadwal_sholat.maghrib') }}</div></div>
+                <div><p class="text-islamic-gold text-sm uppercase font-bold mb-1">Isya</p><div class="font-serif text-2xl font-bold">{{ config('masjid.jadwal_sholat.isya') }}</div></div>
             </div>
         </div>
     </section>
@@ -106,7 +106,7 @@
             </div>
 
             <div class="lg:w-1/2 flex justify-center">
-                <img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Fasilitas Masjid Nurul Iman" class="rounded-2xl shadow-2xl border-4 border-white max-w-md w-full object-cover">
+                <img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Fasilitas {{ config('masjid.name') }}" class="rounded-2xl shadow-2xl border-4 border-white max-w-md w-full object-cover">
             </div>
         </div>
     </section>
