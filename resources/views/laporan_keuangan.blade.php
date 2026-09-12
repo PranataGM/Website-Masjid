@@ -7,7 +7,7 @@
         <div class="absolute inset-0 bg-black/50"></div>
         <div class="relative z-10">
             <i class="fa-solid fa-ruble-sign text-islamic-gold text-3xl mb-4"></i> 
-            <h1 class="font-serif text-5xl font-bold uppercase tracking-widest mb-4">Transparansi Dana Umat</h1>
+            <h1 class="font-serif text-3xl md:text-5xl font-bold uppercase tracking-widest mb-4">Transparansi Dana Umat</h1>
             <p class="text-islamic-gold font-medium uppercase text-sm tracking-widest">
                 <a href="/" class="hover:text-white transition">Beranda</a> / <span class="text-gray-300">Laporan Keuangan</span>
             </p>

@@ -29,7 +29,7 @@
 
     @include('partials.navbar')
 
-    <main class="pt-[80px] md:pt-[92px]">
+    <main>
         @yield('content')
     </main>
 

@@ -1,4 +1,4 @@
-<header class="fixed w-full top-0 z-50">
+<header class="sticky w-full top-0 z-50">
 <div class="hidden lg:flex bg-black/90 text-gray-300 text-xs py-2 px-6 justify-between items-center z-50 relative">
     <div class="flex space-x-6">
         <span><i class="fa-solid fa-phone text-islamic-gold mr-2"></i> Hubungi Kami: {{ config('masjid.contact.phone') }}</span>
