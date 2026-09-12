@@ -3,16 +3,16 @@
 @section('title', 'Beranda')
 
 @section('content')
-    <header class="relative bg-[url('https://images.unsplash.com/photo-1564121211835-e88c852648ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center h-[80vh] flex items-center justify-center text-center">
+    <header class="relative bg-[url('https://images.unsplash.com/photo-1564121211835-e88c852648ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center min-h-[85vh] flex items-center justify-center text-center py-20">
         <div class="absolute inset-0 bg-black/60"></div>
         
-        <div class="relative z-10 px-6 max-w-4xl">
+        <div class="relative z-10 px-6 max-w-4xl mt-12 md:mt-0">
             <i class="fa-solid fa-star-and-crescent text-islamic-gold text-5xl mb-6"></i>
             <p class="text-islamic-gold uppercase tracking-[0.3em] text-sm font-semibold mb-4">Selamat Datang di Rumah Allah</p>
             <h1 class="font-serif text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">{{ config('masjid.name') }}</h1>
             <p class="text-gray-200 text-lg md:text-xl mb-10 font-light">Menjadi pusat ibadah yang makmur, membina peradaban Islam yang rahmatan lil 'alamin, dan memberdayakan umat secara mandiri.</p>
             
-            <div class="flex flex-col sm:flex-row justify-center gap-4 pb-28 md:pb-0">
+            <div class="flex flex-col sm:flex-row justify-center gap-4 pb-32 md:pb-16">
                 <a href="#jadwal" class="bg-islamic-gold text-islamic-green px-8 py-3 rounded-full font-bold uppercase tracking-wider shadow-lg hover:bg-yellow-400 transition">
                     Jadwal Sholat
                 </a>
@@ -106,7 +106,7 @@
             </div>
 
             <div class="lg:w-1/2 flex justify-center">
-                <img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Fasilitas {{ config('masjid.name') }}" class="rounded-2xl shadow-2xl border-4 border-white max-w-md w-full object-cover">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Fasilitas {{ config('masjid.name') }}" loading="lazy" class="rounded-2xl shadow-2xl border-4 border-white max-w-md w-full object-cover">
             </div>
         </div>
     </section>
@@ -132,9 +132,9 @@
                         </div>
                         
                         @if($prog->image)
-                            <img src="{{ asset('storage/' . $prog->image) }}" alt="{{ $prog->title }}" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 relative z-10">
+                            <img loading="lazy" src="{{ asset('storage/' . $prog->image) }}" alt="{{ $prog->title }}" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 relative z-10">
                         @else
-                            <img src="https://unsplash.com/photos/PlBsJ5MybGc/download?force=true&w=800" alt="Pembangunan Masjid" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 relative z-10">
+                            <img loading="lazy" src="https://images.unsplash.com/photo-1564683214964-b31c94411130?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pembangunan Masjid" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 relative z-10">
                         @endif
                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10 pointer-events-none"></div>
                     </div>
@@ -180,9 +180,9 @@
                         </div>
 
                         @if($article->image)
-                            <img src="{{ asset('storage/' . $article->image) }}" alt="{{ $article->title }}" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 relative z-10">
+                            <img loading="lazy" src="{{ asset('storage/' . $article->image) }}" alt="{{ $article->title }}" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 relative z-10">
                         @else
-                            <img src="https://unsplash.com/photos/oD4BvNSaU0k/download?force=true&w=800" alt="Thumbnail Kajian" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 relative z-10">
+                            <img loading="lazy" src="https://images.unsplash.com/photo-1609384594614-7557d34fb703?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Thumbnail Kajian" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 relative z-10">
                         @endif
                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10 pointer-events-none"></div>
                     </div>

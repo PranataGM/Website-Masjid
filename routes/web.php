@@ -84,8 +84,8 @@ Route::get('/laporan-keuangan/rincian', function () {
 });
 
 // Halaman Donasi (Manual Transfer)
-Route::get('/donasi', function () { 
-    return view('donasi'); 
+Route::get('/donasi', function () {
+    return view('donasi');
 });
 
 // Halaman Detail Artikel (Kajian)

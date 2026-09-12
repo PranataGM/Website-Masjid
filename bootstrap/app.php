@@ -13,11 +13,6 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withMiddleware(function (Middleware $middleware) {
         // Daftarkan SecurityHeaders middleware secara global
         $middleware->append(\App\Http\Middleware\SecurityHeaders::class);
-
-        // Beri izin Midtrans masuk tanpa token CSRF
-        $middleware->validateCsrfTokens(except: [
-            'midtrans/callback',
-        ]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //

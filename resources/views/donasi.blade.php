@@ -13,7 +13,6 @@
             <div class="space-y-6">
                 
                 @foreach(config('masjid.donasi.bank') as $bank)
-                <!-- Rekening {{ $bank['name'] }} -->
                 <div class="bg-white p-6 rounded-2xl shadow-md border-l-4 border-{{ $bank['color'] }} flex items-center justify-between">
                     <div>
                         <p class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-1">{{ $bank['name'] }}</p>
@@ -26,7 +25,7 @@
 
                 <div class="bg-blue-50 border border-blue-200 text-blue-800 p-4 rounded-xl text-sm flex">
                     <i class="fa-solid fa-circle-info text-xl mr-3 mt-0.5"></i>
-                    <p>Setelah melakukan transfer, mohon konfirmasi ke nomor WhatsApp Bendahara Masjid: <strong>{{ config('masjid.donasi.konfirmasi_whatsapp') }}</strong></p>
+                    <p>Mohon konfirmasi ke WhatsApp Bendahara setelah melakukan transfer: <strong>{{ config('masjid.donasi.konfirmasi_whatsapp') }}</strong></p>
                 </div>
             </div>
 
@@ -36,14 +35,14 @@
                 <p class="text-gray-500 text-sm mb-6">Menerima donasi dari semua dompet digital (OVO, GoPay, Dana, dll) dan Mobile Banking.</p>
                 
                 @if(config('masjid.donasi.qris_image_url'))
-                    <img src="{{ config('masjid.donasi.qris_image_url') }}" alt="QRIS {{ config('masjid.name') }}" class="w-64 h-64 object-contain mx-auto rounded-xl shadow-sm border border-gray-100">
+                    <img src="{{ config('masjid.donasi.qris_image_url') }}" alt="QRIS Masjid Nurul Iman" class="w-64 h-64 object-cover border border-gray-200 rounded-xl mb-4 shadow-sm">
                 @else
-                    <div class="w-64 h-64 bg-gray-100 border-2 border-dashed border-gray-300 mx-auto rounded-xl flex flex-col items-center justify-center p-4">
-                        <i class="fa-solid fa-qrcode text-6xl text-gray-400 mb-4"></i>
-                        <span class="text-gray-500 text-sm">Gambar QRIS Belum Tersedia</span>
+                    <div class="w-64 h-64 bg-gray-100 flex items-center justify-center border-2 border-dashed border-gray-300 rounded-xl mb-4 text-gray-400 flex-col">
+                        <i class="fa-solid fa-qrcode text-5xl mb-2"></i>
+                        <span>QRIS Belum Tersedia</span>
                     </div>
                 @endif
-                <p class="text-xs text-gray-400 mt-4 uppercase tracking-widest">GPN • Standar Nasional</p>
+                <p class="text-xs text-gray-400 mt-auto">A.N. MASJID NURUL IMAN</p>
             </div>
         </div>
     </section>

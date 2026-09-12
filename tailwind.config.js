@@ -11,8 +11,14 @@ export default {
 
     theme: {
         extend: {
+            colors: {
+                'islamic-green': '#0f4d3c',
+                'islamic-gold': '#e0a945',
+                'islamic-bg': '#fcfbf8',
+            },
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                serif: ['"Playfair Display"', ...defaultTheme.fontFamily.serif],
+                sans: ['"Poppins"', ...defaultTheme.fontFamily.sans],
             },
         },
     },
